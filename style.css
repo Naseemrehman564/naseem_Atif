@@ -1,0 +1,418 @@
+Global Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    /* background-color: black; */
+    color: #2c3e50;
+    line-height: 1.8;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6f61,#6a82fb); /* Soft, elegant gradient */
+    color: white;
+    padding: 2rem 1rem; /* Ample padding for a luxurious feel */
+    text-align: center;
+    border-radius: 25px; /* Smooth, generous rounded corners */
+    margin-bottom: 60px; /* Increased margin for spacing */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); /* Deeper shadow for sophistication */
+    transition: all 0.4s ease, box-shadow 0.4s ease; /* Smooth transitions for hover effects */
+}
+
+
+
+header:hover {
+    background: linear-gradient(135deg, #6a82fb, #ff6f61); /* Reverse gradient on hover */
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+header h1 {
+    font-size: 4rem; /* Larger font size for prominence */
+    margin-bottom: 20px; /* Increased space below title */
+    text-shadow: 3px 3px 15px rgba(36, 6, 6, 0.6); /* Stronger text shadow for depth */
+    letter-spacing: 2px; /* More pronounced letter spacing for elegance */
+    font-family: 'Poppins', sans-serif; /* Modern, stylish font */
+    transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for text shadow and color */
+}
+
+header h1:hover {
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8); /* Even stronger text shadow on hover */
+    color: #221c03; /* Bright gold color on hover for contrast */
+}
+
+
+
+header p {
+    font-size: 2rem; /* Larger paragraph size for readability */
+    font-weight: 300; /* Light font weight for sophistication */
+    opacity: 0.95; /* Slightly brighter opacity */
+    font-style: italic; /* Elegant italic style */
+    margin-top: 15px; /* Space above paragraph */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+
+header p:hover {
+    color: #463803; /* Bright color change on hover for emphasis */
+}
+
+/* Adding a decorative border to enhance visual appeal */
+header h1, header p {
+    padding: 1rem 0.5rem; /* More padding for breathing space */
+    border-radius: 15px; /* Rounded corners for text elements */
+    border: 2px solid rgba(255, 249, 249, 0.15); /* Semi-transparent background for contrast */
+    backdrop-filter: blur(10px); /* Blur effect for elegance */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    padding: 15px 30px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    color: rgb(35, 4, 63);
+    font-weight: bold;
+}
+
+/* Progress Bar */
+section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2ecc71;
+}
+
+progress {
+    width: 100%;
+    height: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ecf0f1;
+
+}
+
+progress::-webkit-progress-value {
+    background-color: #3498db;
+    transition: width 0.5s ease;
+}
+.vieo-grid{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-grid {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; /* Space between grid items */
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid-item {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Chapter Sections */
+section {
+    background-color: #f7fafc;/* Clean white background */
+    margin: 30px 0;
+    padding: 60px 30px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth scale effect */ 
+    border: 5px solid transparent;
+    position: relative; 
+    background-clip: padding-box;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Match the section's border radius */
+    background: linear-gradient(135deg, #ff6f61, #6a82fb); /* Gradient color */
+    z-index: -1; /* Place behind the section */
+    padding: 5px; /* Match the border width */
+}
+
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #6a82fb, #ff6f61);
+}
+
+section h2 {
+    background: linear-gradient(135deg, #4a90e2, #6dd5ed); /* Soft gradient for elegance */
+    color: #fff;
+    padding: 10px 15px; /* Ample padding for a sophisticated touch */
+    border-radius: 15px; /* More rounded corners for softness */
+    text-align: center;
+    font-size: 3rem; /* Prominent font size */
+    margin-bottom: 25px; /* Space below heading */
+    border-bottom: 5px solid #ffcc00; /* Gold border for luxurious appeal */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow for elegance */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Increased letter spacing for a refined look */
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-family: 'Montserrat', sans-serif; /* Modern font for a professional feel */
+}
+
+section h2:hover {
+    background: linear-gradient(135deg, #3b7cda, #4db8e5); /* Slightly darker gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Increased shadow on hover for depth */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Stronger text shadow on hover */
+}
+
+section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 20px 0;
+    padding:  2rem;
+    text-align: justify;
+    border-left: 4px solid #3498db;
+    border-right: 4px solid #3498db;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Chapter Navigation */
+section nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section nav a {
+    padding: 12px 25px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #27ae60;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+section nav a:hover {
+    background-color: #27ae60;
+    border-color: #2ecc71;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Deep navy to teal gradient */
+    color: white;
+    padding: 40px 20px; /* Increased padding for spaciousness */
+    text-align: center;
+    border-radius: 25px; /* More rounded corners for a softer look */
+    margin-top: 50px;
+    box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for elegance */
+    position: relative;
+}
+
+footer p {
+    font-size: 1.5rem; /* Larger text for impact */
+    margin: 10px 0;
+    font-style: italic; /* Italicized for sophistication */
+    letter-spacing: 1.2px; /* Spacing for refinement */
+    opacity: 0.9; /* Subtle transparency for elegance */
+}
+
+footer a {
+    color: #ffcc00; /* Bright gold color for links */
+    text-decoration: none; /* No underline for a clean look */
+    font-weight: bold; /* Bold for emphasis */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+}
+
+footer a:hover {
+    color: #fff; /*Change color on hover for visibility*/
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+footer .social-icons {
+    margin-top: 15px; /* Space above icons */
+}
+
+footer .social-icons a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 1.5rem; /* Larger icon size */
+    color: #ffcc00; /* Consistent link color */
+    transition: transform 0.3s ease; /* Scale effect on hover */
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+
+
+@media (max-width: 472px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adding space between buttons */
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 8px 10px; /* Adjusting the size of the buttons */
+        width: 90%; /* Making sure buttons are not too wide */
+        text-align: center;
+    }
+
+    section nav a {
+        display: block;
+        margin: 10px 0; /* Adding space between chapter navigation links */
+        padding: 10px 15px; /* Adjusting button size */
+        font-size: 0.85rem;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    /* Adjusting chapter sections to fit better on smaller screens */
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+@media (max-width: 450px) {
+    body {
+        padding: 10px; /* Reduce padding on body */
+    }
+
+    header {
+        padding: 40px 20px; /* Adjust padding for header */
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Smaller title */
+    }
+
+    header p {
+        font-size: 1.3rem; /* Smaller subtitle */
+    }
+
+    section {
+        padding: 20px; /* Adjust padding for sections */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Smaller chapter headings */
+    }
+
+    section p {
+        font-size: 1rem; /* Smaller chapter text */
+    }
+
+    footer {
+        padding: 30px 15px; /* Adjust padding for footer */
+    }
+
+    footer p {
+        font-size: 1rem; /* Smaller footer text */
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem; /* Adjust size of social icons */
+    }
+}
